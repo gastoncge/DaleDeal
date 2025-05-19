@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Configuración de codificación y responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título de la pestaña del navegador -->
+    <title>DALE DEAL</title>
+
+    <!-- CSS de Bootstrap para estilos base -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Íconos de Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS personalizado del proyecto -->
+    <link rel="stylesheet" href="../css/estilos.css" />
+  </head>
+
+  <body>
+    <!-- Barra de navegación principal -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <!-- Logo de la marca -->
+        <a class="navbar-brand" href="#">
+          <img src="../img/LOGO-2.png" alt="Logo de Dale Deal" />
+        </a>
+
+        <!-- Barra de búsqueda central -->
+        <form class="d-flex search-bar justify-content-center">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Buscar productos..."
+            aria-label="Buscar"
+          />
+          <button class="btn btn-warning" type="submit">Buscar</button>
+        </form>
+
+        <!-- Sección de usuario e íconos a la derecha -->
+        <div class="d-flex align-items-center">
+          <div class="ms-3 user-section d-flex align-items-center">
+            <img src="https://via.placeholder.com/30" alt="Imagen de usuario" />
+            <span class="ms-2">GASTÓN</span>
+          </div>
+          <!-- Ícono de notificaciones -->
+          <a href="#" class="nav-link" aria-label="Notificaciones"
+            ><i class="bi bi-bell"></i
+          ></a>
+          <!-- Ícono del carrito -->
+          <a href="#" class="nav-link" aria-label="Carrito de compras"
+            ><i class="bi bi-cart"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Imagen decorativa debajo del navbar + eslogan -->
+    <div class="banner-container">
+      <img
+        class="pattern img-fluid"
+        src="../img/magicpattern-gradient-1745971832200.jpeg"
+        alt="Fondo decorativo"
+      />
+    </div>
+
+    <!-- Carrusel de imágenes con promociones -->
+    <div
+      id="carouselDaleDeal"
+      class="carousel slide mt-4 mx-auto carousel-fixed carousel-inner rounded-3"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+      style="max-width: 1400px"
+    >
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="position-relative">
+          <img
+            src="../img/1.jpg"
+            class="d-block w-100 rounded-3"
+            alt="slide1"
+          />
+          <div class="carousel-caption text-start fixed-caption">
+            <h2 class="fw-bold text-white">Obtené ayuda cuando la necesites</h2>
+            <p class="text-white">
+              Desde envíos hasta devoluciones, encontrá tus respuestas.
+            </p>
+            <a href="#" class="btn btn-light btn-sm rounded-pill px-4"
+              >Empezá acá</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="position-relative">
+          <img
+            src="../img/2.jpg"
+            class="d-block w-100 rounded-3"
+            alt="slide2"
+          />
+          <div class="carousel-caption text-start fixed-caption">
+            <h2 class="fw-bold text-white">Ofertas que no podés dejar pasar</h2>
+            <p class="text-white">Productos con hasta 50% de descuento.</p>
+            <a href="#" class="btn btn-light btn-sm rounded-pill px-4"
+              >Ver más</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="position-relative">
+          <img
+            src="../img/3.jpg"
+            class="d-block w-100 rounded-3"
+            alt="slide3"
+          />
+          <div class="carousel-caption text-start fixed-caption">
+            <h2 class="fw-bold text-white">Envíos rápidos a todo el país</h2>
+            <p class="text-white">Recibí tus productos en 24-48hs.</p>
+            <a href="#" class="btn btn-light btn-sm rounded-pill px-4"
+              >Conocé más</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <div class="position-relative">
+          <img
+            src="../img/4.jpeg"
+            class="d-block w-100 rounded-3"
+            alt="slide4"
+          />
+          <div class="carousel-caption text-start fixed-caption">
+            <h2 class="fw-bold text-white">Nuevos ingresos cada semana</h2>
+            <p class="text-white">Siempre hay algo nuevo para vos.</p>
+            <a href="#" class="btn btn-light btn-sm rounded-pill px-4"
+              >Explorá ahora</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="carousel-item">
+        <div class="position-relative">
+          <img
+            src="../img/5.jpg"
+            class="d-block w-100 rounded-3"
+            alt="slide5"
+          />
+          <div class="carousel-caption text-start fixed-caption">
+            <h2 class="fw-bold text-white">Pagá en cuotas sin interés</h2>
+            <p class="text-white">Con tus tarjetas favoritas.</p>
+            <a href="#" class="btn btn-light btn-sm rounded-pill px-4"
+              >Ver promociones</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de productos destacados -->
+    <div class="container mt-5">
+      <p class="texto2">Productos Apple Store</p>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <!-- Producto 1 -->
+        <div class="col">
+          <a href="">
+            <div class="card h-100">
+              <img
+                src="../img/macbook.jpg"
+                class="card-img-top"
+                alt="Macbook"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Macbook</h5>
+                <p class="card-text">$1,999</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col">
+          <a href="./paginaCompra.html">
+            <div class="card h-100">
+              <img
+                src="../img/iphone.jpg"
+                class="card-img-top"
+                alt="Iphone 16"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Iphone 16</h5>
+                <p class="card-text">$3,499</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col">
+          <a href="">
+            <div class="card h-100">
+              <img
+                src="../img/apple watch.jpg"
+                class="card-img-top"
+                alt="Apple Watch"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Apple Watch</h5>
+                <p class="card-text">$2,599</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="col">
+          <a href="">
+            <div class="card h-100">
+              <img
+                src="../img/airpods.jpg"
+                class="card-img-top"
+                alt="Air Pods"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Air Pods</h5>
+                <p class="card-text">$4,199</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie de página (footer) -->
+    <footer class="footer">
+      <p class="mb-0">&copy; 2025 Dale Deal. Todos los derechos reservados.</p>
+      <small
+        ><a href="#">Términos y condiciones</a> |
+        <a href="#">Política de privacidad</a></small
+      >
+    </footer>
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

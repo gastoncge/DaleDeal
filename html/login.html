@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DALE DEAL</title>
+
+    <!-- Descripción para SEO -->
+    <meta
+      name="description"
+      content="Iniciá sesión en Dale Deal para comprar, vender y ofrecer servicios de forma rápida y segura. Conectá con miles de usuarios en nuestra plataforma."
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <!-- Ícono del sitio -->
+    <link rel="shortcut icon" href="../img/LOGO.png" type="image/x-icon" />
+
+    <!-- AOS (Animaciones al hacer scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+
+  <body>
+    <!-- Contenedor principal con imagen de fondo -->
+    <div class="fondo-con-formulario">
+      <!-- Imagen de fondo -->
+      <img
+        class="imagen-fondo"
+        src="../img/ChatGPT Image 22 abr 2025, 16_21_44.png"
+        alt="Fondo cajas"
+      />
+
+      <!-- Formulario centrado -->
+      <div class="formulario text-center">
+        <h4 class="mb-4">Ingresá a tu cuenta</h4>
+
+        <!-- Campo de email -->
+        <div class="mb-3 text-start">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Ingrese su email."
+          />
+        </div>
+
+        <!-- Campo de contraseña -->
+        <div class="mb-3 text-start">
+          <label for="password" class="form-label">Contraseña</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Ingrese su contraseña."
+          />
+        </div>
+
+        <!-- Enlace para recuperación de contraseña -->
+        <div class="mb-3 text-end">
+          <a href="#" class="text-decoration-none">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <!-- Botón de ingreso -->
+        <button type="submit" class="btn btn-danger w-100 mb-3">
+          Ingresar
+        </button>
+
+        <!-- Enlace para registrarse -->
+        <p>¿No tenés una cuenta?</p>
+        <a
+          href="./crearCuenta.html"
+          class="btn btn-outline-danger w-100"
+          id="b2"
+        >
+          Crear cuenta
+        </a>
+
+        <!-- Logo inferior -->
+        <div class="mt-4">
+          <img src="../img/LOGO-2.png" alt="LOGO2" height="100" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Capa oscura para sombrear fondo -->
+    <div class="capa-oscura"></div>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init(); // Inicializa animaciones
+    </script>
+  </body>
+</html>

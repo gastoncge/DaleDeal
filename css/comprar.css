@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+  min-height: 100vh; /* altura mínima completa de pantalla */
+  width: 100vw;
+  overflow-x: hidden; /* oculta el desborde horizontal */
+  background-color: #f8f9fa; /* gris claro */
+  font-family: "Segoe UI", sans-serif; /* fuente principal */
+}
+
+/* NAVBAR personalizado */
+.navbar-custom {
+  background-color: #ff0000; /* rojo vibrante */
+  color: #fff;
+  padding: 10px 20px;
+}
+
+/* Logo en la navbar */
+.navbar-brand img {
+  height: 40px;
+}
+
+/* Estilos para la barra de búsqueda */
+.search-bar {
+  flex-grow: 1;
+  margin: 0 20px;
+  max-width: 700px; /* se movió aquí desde HTML */
+}
+.search-bar input {
+  max-width: 550px;
+}
+
+/* Enlaces del navbar */
+.nav-link {
+  color: #333;
+  font-weight: 500;
+  margin: 0 8px;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Imagen del usuario en navbar */
+.user-section img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Botón de búsqueda en amarillo suave */
+.btn.btn-warning {
+  background-color: #fbed2d;
+  color: #000;
+  border: none;
+}
+
+/* Texto superpuesto al banner */
+.texto1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-top: 15px;
+  text-align: center;
+  color: #ff0000;
+}
+
+/* Contenedor del banner decorativo */
+.banner-container {
+  text-align: center;
+}
+
+/* Imagen del banner */
+.pattern {
+  width: 100%;
+  height: 35px;
+  object-fit: cover;
+}
+
+/* Tarjeta del producto principal */
+.product-card {
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* Precio actual destacado */
+.price-tag {
+  color: #28a745; /* verde */
+  font-weight: bold;
+}
+
+/* Precio tachado anterior */
+.old-price {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+/* Miniaturas del producto */
+.thumbnail-img {
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Círculos de selección de color */
+.color-option {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Círculo seleccionado */
+.color-option.selected {
+  border-color: #000;
+}

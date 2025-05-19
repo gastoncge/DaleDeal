@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dimensiones base del documento */
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Contenedor principal con fondo naranja */
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #ff8000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagen de fondo cubriendo todo el contenedor */
+.imgFondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Formulario blanco centrado con padding y sombra */
+.form-container {
+  position: relative;
+  z-index: 2;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Título del formulario */
+.form-container h4 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Imagen del logo al pie del formulario */
+.logo-img {
+  display: block;
+  margin: 20px auto 0;
+  height: 60px;
+}
+
+/* Estilo del botón principal */
+.btn-primary {
+  background-color: #d63031;
+  border-color: #d63031;
+}
+.btn-primary:hover {
+  background-color: #c0392b;
+}
+
+/* Botón de borde rojo para iniciar sesión */
+.btn-outline-primary {
+  color: #d63031;
+  border-color: #d63031;
+}
+.btn-outline-primary:hover {
+  background-color: #d63031;
+  color: white;
+}
+
+/* Capa oscura encima del fondo (opcional para efecto) */
+.capa-oscura {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* leve oscuridad */
+  z-index: 2;
+}
